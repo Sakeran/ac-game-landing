@@ -1,0 +1,53 @@
+@import "../colors.styl"
+
+.hero
+  padding 2rem 0
+
+  background: radial-gradient(farthest-side at 50% 5rem, hsla(213,99,84, 0.4), 20%, transparent 80%);
+
+  h1
+    position relative
+
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: transparent;
+
+    background-color: #AFEBFE;
+    background-image: linear-gradient(to bottom, #AFEBFE, white);
+    background-clip: text;
+
+    width: max-content;
+    margin: 0 auto;
+    min-height: 9rem;
+
+    &::before
+      content: "Veritus Sigma"
+      pointer-events: none;
+      display: block;
+      position: absolute;
+      top: 3.25rem;
+      
+      color: transparent;
+      background-color: lightblue;
+      background-image: linear-gradient(to bottom, white, #AFEBFE);
+      background-clip: text;
+
+      transform: scaleY(-1);
+      opacity 0.5;
+
+
+    &::after
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $lightblue;
+
+      position: relative;
+      top: -0.75rem;
+
+.hero-subtitle
+  font-weight: 100;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
