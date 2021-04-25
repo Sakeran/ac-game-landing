@@ -27,6 +27,9 @@ h2 {
 p
   max-width: 60ch
 
+.container
+  padding: 0 0.5rem;
+
 .image-display
   margin: 0 0.5rem;
   text-align: center;
@@ -41,6 +44,25 @@ p
   .display-text
     margin: 1rem auto 2rem;
     font-size: 1.2rem;
+
+.bg-box
+  background: linear-gradient(to bottom, hsl(205,68,29), hsl(205,54, 9));
+  border: 2px solid white;
+  border-radius: 0.5rem;
+
+  padding: 1rem 0.5rem;
+
+.feature-box
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.feature-header
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5rem 0;
 
 @import "./layout/hero.styl"
 @import "./layout/nav.styl"
