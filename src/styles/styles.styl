@@ -220,9 +220,18 @@ footer
   padding: 2rem 1rem 1rem;
   font-size: 0.8em;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 800px)
+    padding: 4rem 1rem 2rem;
+
+  p
+    max-width: none;
 
   a
     color: $lightblue;
+
 
 @import "./layout/hero.styl"
 @import "./layout/nav.styl"
